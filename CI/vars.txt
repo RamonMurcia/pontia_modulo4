@@ -1,0 +1,5 @@
+MODEL_NAME: adult-income-classifier-merlin-nunez
+MODEL_ALIAS: champion-merlin-nunez
+AZURE_CONTAINER_NAME: model-api-merlin-nunez
+IMAGE_NAME: model-api-merlin-nunez
+AZURE_REGION: eastus
