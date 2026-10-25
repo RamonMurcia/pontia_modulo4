@@ -26,23 +26,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt    
 
-      # - name: Download and extract dataset
-      #   shell: bash
-      #   run: |
-      #     set -euo pipefail
+      - name: Download and extract dataset
+        shell: bash
+        run: |
+          set -euo pipefail
 
-      #     mkdir -p ./data/raw
+          mkdir -p ./data/raw
 
-      #     curl -fL \
-      #       "https://archive.ics.uci.edu/static/public/20/census+income.zip" \
-      #       -o /tmp/census-income.zip
+          curl -fL \
+            "https://archive.ics.uci.edu/static/public/20/census+income.zip" \
+            -o /tmp/census-income.zip
 
-      #     unzip -o /tmp/census-income.zip -d ./data/raw
+          unzip -o /tmp/census-income.zip -d ./data/raw
 
-      #     rm /tmp/census-income.zip
+          rm /tmp/census-income.zip
 
-      #     echo "Dataset extracted to ./data/raw"
-      #     find ./data/raw -maxdepth 2 -type f  
+          echo "Dataset extracted to ./data/raw"
+          find ./data/raw -maxdepth 2 -type f  
       
       # - name: Train and save model
       #   run: |
