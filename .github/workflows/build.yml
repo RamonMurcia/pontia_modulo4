@@ -44,9 +44,9 @@ jobs:
           echo "Dataset extracted to ./data/raw"
           find ./data/raw -maxdepth 2 -type f  
       
-      # - name: Train and save model
-      #   run: |
-      #     python src/main.py
+      - name: Train and save model
+        run: |
+          python src/main.py
       #   env:
       #     AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       #     AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
